@@ -1,0 +1,1 @@
+filter streams - convert uppercase to lowercase
