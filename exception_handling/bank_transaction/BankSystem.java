@@ -2,7 +2,6 @@ package exception_handling.bank_transaction;
 
 import java.util.Scanner;
 
-
 // Custom Exception
 class InsufficientBalanceException extends Exception {
     public InsufficientBalanceException(String message) {
@@ -38,8 +37,8 @@ public class BankSystem {
 
         try {
             System.out.print("Enter withdrawal amount: ");
-            double amount = scanner.nextDouble();
-            account.withdraw(amount);
+            double amountt = scanner.nextDouble();
+            account.withdraw(amountt);
         } catch (InsufficientBalanceException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
         } finally {
